@@ -1,8 +1,14 @@
-import React from 'react';
 import Join from '../components/Auth/Join';
+import {useRecoilState} from 'recoil';
+import {loginState} from '../shared/recoil/authAtom';
+import {Navigate} from 'react-router-dom';
 const Signup = () => {
+  const [login] = useRecoilState(loginState);
+  if (login) {
+    return <Navigate to="/" replace />;
+  }
   return (
-    <div style={{marginTop: '80px'}}>
+    <div>
       <Join />
     </div>
   );

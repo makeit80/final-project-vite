@@ -5,19 +5,6 @@ export const GlobalStyle = createGlobalStyle`
 v2.0 | 20110126
 License: none (public domain)
 */
-@font-face {
-    font-family: 'NanumSquareNeo-Variable';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-* {
-   background-color: black;
-   color: white;
- box-sizing: border-box;
-}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -36,7 +23,7 @@ time, mark, audio, video {
  padding: 0;
  border: 0;
  font-size: 100%;
- font: inherit;
+ /* font: inherit; */
  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -46,7 +33,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
    line-height: 1;
-   font-family:'NanumSquareNeo-Variable'
 }
 ol, ul {
  list-style: none;
@@ -73,4 +59,5 @@ div.swal2-icon { margin: 0 auto; } .swal2-popup { padding: 1.25em 0 1.25em }
 a {
  text-decoration: none;
 }
+
 `;
